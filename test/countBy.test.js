@@ -14,6 +14,6 @@ describe("countBy", () => {
     ];
     it("Count by simple value", () =>{
         let online = countBy(customers, value => value.active);
-        expect(online).to.eql([{'true': 4, 'false': 2}]);
+        expect(online).to.eql([{'true': 3, 'false': 1}]);
     });
 })
