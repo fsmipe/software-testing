@@ -20,7 +20,7 @@ describe("eq", () => {
         expect(eq("mikko", "maria")).to.equal(false);
     });
 
-    it("Compare undefined to true", () =>{
+    it("Compare different types", () =>{
         expect(eq(undefined, true)).to.equal(false);
     });
 
