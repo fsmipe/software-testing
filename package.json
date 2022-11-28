@@ -7,10 +7,8 @@
   "scripts": {
     "test": "mocha",
     "testcoveralls": "mocha  | coveralls",
-    "c8": "c8 mocha",
+    "c8coveralls": "c8 --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=text-lcov mocha | coveralls",
     "c8ignore": "c8 --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ mocha",
-    "nyclocal": "nyc report --reporter=text mocha",
-    "nyc": "nyc report --reporter=text-lcov | coveralls",
     "test-report": "mocha --reporter mochawesome"
   },
   "repository": {
@@ -30,10 +28,11 @@
     "mocha-lcov-reporter": "^1.3.0",
     "mochawesome": "^7.1.3",
     "nodemon": "^2.0.20",
-    "nyc": "^15.1.0"
+    "nyc": "^15.1.0",
+    "request": "^2.88.2"
   },
   "devDependencies": {
     "coveralls": "^3.1.1",
     "mocha": "^10.1.0"
-  }
+    }
 }

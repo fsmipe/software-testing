@@ -27,8 +27,8 @@ jobs:
     - name: Npm dependencies
       run: npm ci
 
-    - name: Run tests
-      run: npm test
+    - name: Run tests coveralls
+      run: npm c8coveralls
 
 
     - name: Coveralls
