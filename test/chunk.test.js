@@ -6,8 +6,9 @@ const expect = chai.expect
 
 describe("chunkyboi", () => {
     it("Basic empty vector", () =>{
-        expect(chunk([])).to.equal([]);
+        expect(chunk([])).to.eql([]);
     });
+    /**
     it("Normal value test with 1 chunk", () =>{
         var product = ["Cucumber", "Tomatoe", "Pineapple", "Apple", "Pen"];
         var productChunks = chunk(product);
@@ -15,9 +16,8 @@ describe("chunkyboi", () => {
     });
     it("Normal value test with 1 chunk", () =>{
         let product = ["Cucumber", "Tomatoe", "Pineapple", "Apple", "Pen"];
-        expect(chunk(product, "3")).to.deep.eq([["Cucumber", "Tomatoe", "Pineapple", "Apple", "Pen"]])
+        expect(chunk(product, "3")).to.deep.eql([["Cucumber", "Tomatoe", "Pineapple", "Apple", "Pen"]])
     });
-    /**
     it("Normal value tests", () =>{
         let product = ["Cucumber", "Tomatoe", "Pineapple", "Apple", "Pen"];
         expect(chunk(product, 2)).to.eql([["Cucumber", "Tomatoe"], ["Pineapple", "Apple"], ["Pen"]])

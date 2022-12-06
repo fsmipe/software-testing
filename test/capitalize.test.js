@@ -17,6 +17,14 @@ describe("capitalize", () => {
         const string = capitalize("2 items")
         expect(string).to.equal("2 items")
     });
+    it("Symbol test", () =>{
+        const string = capitalize("~")
+        expect(string).to.equal("~")
+    });
+    it("Array/Object test", () =>{
+        const string = capitalize(["ArrayException"])
+        expect(string).to.equal("Arrayexception")
+    });
     it("Empty string", () =>{
         const string = capitalize("")
         expect(string).to.equal("")
