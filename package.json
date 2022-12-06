@@ -7,14 +7,9 @@
   "scripts": {
     "mocha": "_mocha -b -R spec",
     "test": "mocha",
-    "testcoveralls": "mocha  | coveralls",
     "c8coveralls": "c8 --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=text-lcov mocha | coveralls",
     "c8": "c8 --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=lcov --reporter=text mocha",
-    "test-report": "mocha --reporter:lcov",
-    "test2": "nyc --reporter=html --reporter=text mocha --timeout 10000 --exit --require test/",
-    "coverage2": "nyc report — -reporter=text-lcov | coveralls",
-    "nyc": "nyc --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=lcov --reporter=text npm run test",
-    "nyc2": "nyc --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ npm run mocha"
+    "c8local": "c8 --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=text mocha"
   },
   "repository": {
     "type": "git",
