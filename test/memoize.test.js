@@ -24,4 +24,8 @@ describe("memoize", () => {
         values.Cache = WeakMap;
         expect(values(object)).to.eql([2,2]);
     });
+
+    it("Throw error check", () =>{
+        expect(() => memoize(null)).to.throw('Expected a function');
+    });
 })
