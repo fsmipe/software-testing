@@ -22,12 +22,10 @@ describe("isEmpty", () => {
         ];
         expect(isEmpty(products)).to.equal(false)
     });
-    /**
     it("Empty map", () => {
-        let users = [{}];
-        expect(isEmpty(users)).to.equal(true)
+        const map1 = new Map();
+        expect(isEmpty(map1)).to.equal(true)
     });
-     */
     it("Normal object", () => {
         const user = {
             firstName: "John",

@@ -8,9 +8,11 @@
     "mocha": "_mocha -b -R spec",
     "test": "mocha",
     "c8coveralls": "c8 --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=text-lcov mocha | coveralls",
-    "c8": "c8 --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=lcov --reporter=text mocha",
-    "c8localall": "c8 --all --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=text mocha",
-    "c8local": "c8 --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --exclude test/ --reporter=text mocha"
+    "c8": "c8 --all --include COMP.SE.200-2022-2023-1-main/src/ --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --reporter=lcov --reporter=text mocha",
+    "c8localall": "c8 --all --include COMP.SE.200-2022-2023-1-main/src/ --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --reporter=text mocha",
+    "c8local": "c8 --include COMP.SE.200-2022-2023-1-main/src/ --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --reporter=text mocha",
+    "c8html": "c8 --all --include COMP.SE.200-2022-2023-1-main/src/ --exclude COMP.SE.200-2022-2023-1-main/src/.internal/ --reporter=lcov --reporter=html mocha",
+    "test-report": "mocha --reporter mochawesome"
   },
   "repository": {
     "type": "git",

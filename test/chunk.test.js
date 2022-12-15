@@ -8,7 +8,6 @@ describe("chunkyboi", () => {
     it("Basic empty vector", () =>{
         expect(chunk([])).to.eql([]);
     });
-    /**
     it("Normal value test with 1 chunk", () =>{
         var product = ["Cucumber", "Tomatoe", "Pineapple", "Apple", "Pen"];
         var productChunks = chunk(product);
@@ -34,5 +33,4 @@ describe("chunkyboi", () => {
         let product = ["a", "b", "c", "d"];
         expect(chunk(product, 3)).to.eql([["a", "b", "c"], ["d"]])
     });
-    */
 })
