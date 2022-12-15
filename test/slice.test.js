@@ -49,7 +49,7 @@ describe("slice", () => {
 
     it("Slice a whole sparse array to return dense", () =>{
         array = [1, , 3, 4];
-        var test = slice(array, 0, 4);
+        var test = slice(array, 0);
         expect(test).to.eql([1, 3, 4]);
     });
 })
