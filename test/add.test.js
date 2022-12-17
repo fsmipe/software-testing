@@ -23,9 +23,6 @@ describe("Add", () => {
     it("Adding 2 zeros together", () =>{
         expect(add(0,0)).to.equal(0)
     });
-    it("Number as string", () =>{
-        expect(add("5",0)).to.equal(5)
-    });
     it("Number as null", () =>{
         expect(add(5,null)).to.equal(5)
     });

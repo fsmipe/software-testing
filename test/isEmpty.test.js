@@ -38,4 +38,14 @@ describe("isEmpty", () => {
         const user = {};
         expect(isEmpty(user)).to.equal(true)
     });
+    it("Empty object", () => {
+        const user = {
+        };
+        expect(isEmpty(user)).to.equal(true)
+    });
+    it("Function element", () => {
+        const fvalue = function returnString() { return "just a test"; }
+        console.log(typeof fvalue)
+        expect(isEmpty(fvalue)).to.equal(false)
+    });
 })

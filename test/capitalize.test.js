@@ -29,4 +29,14 @@ describe("capitalize", () => {
         const string = capitalize("")
         expect(string).to.equal("")
     });
+    it("Testing symbol value, fancy title etc string", () =>{
+        const string = capitalize(Symbol("this could be a fancy title"))
+        expect(string).to.equal("This could be a fancy title")
+    });
+    it("Multiline string", () =>{
+        const string = capitalize("something \
+        fanzy")
+        expect(string).to.equal("Something \
+        fanzy")
+    });
 })
